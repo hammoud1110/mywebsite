@@ -1,0 +1,23 @@
+body {
+	min-width: 1800px;
+}
+
+
+.k-widget {
+	background-color: #FFFFFF;
+}
+
+.k-menu.k-header {
+	border-color: #FFFFFF;
+}
+
+.k-menu .k-item {
+	border-color: #FFFFFF;
+}
+
+.k-menu .k-item>.k-link {
+	-moz-user-select: none;
+	display: block;
+	line-height: 3em;
+	padding: 0.5em 1.1em 0.4em;
+}
