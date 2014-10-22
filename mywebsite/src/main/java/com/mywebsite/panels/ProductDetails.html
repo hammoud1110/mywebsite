@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+
+<title wicket:id="title"></title>
+<link rel="stylesheet" href="css/homepage.css">
+<link
+	href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold'
+	rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="style.css" type="text/css" media="screen"
+	title="Stylesheet" />
+</head>
+<style>
+body {
+	background-color: tan;
+}
+.box {
+	background-color: #3d4543;
+	height: 300px;
+	width: 250px;
+	border-radius: 10px;
+	position: relative;
+	top: 80px;
+	left: 40%;
+}
+
+.display {
+	background-color: #222;
+	width: 220px;
+	position: relative;
+	left: 15px;
+	top: 20px;
+	height: 40px;
+}
+#footer {
+    clear:left;
+    margin-top:1em;
+    background:#efefef;
+    text-align:center;
+    padding:1px;
+}
+</style>
+
+<body>
+<div style="margin-left: 10px; float: left; width: 100%; height: 95%;">
+		<!-- Set Div As your requirement -->
+		<div wicket:id="menu" style="margin-left: 10%;"></div>
+	
+	<div
+		 style="float: left; width: 10%; background-border:#000000;background-color: #FFA500; height: 12%;">
+	<div ><h1 style="margin-left: 10px;">eSHOP</h1></div>
+		<!-- Set Div As your requirement -->
+	
+		
+		<br>
+		
+		<br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br>
+	</div>
+
+	<div style="margin-left: 10px; float: left; width: 50%; height: 10%;">
+
+		<!-- Set Div As your requirement -->
+
+		<h1 wicket:id="heading"></h1>
+		<span wicket:id="desc"></span>
+		<hr size=2>
+		<br>
+
+
+		<div style="width: 300px; height: 300px; clear: left;"></div>
+
+
+	</div>
+
+	<div style="float: left; width: 30%; height: 95%;">
+
+		<!-- Set Div As your requirement -->
+		<div style="margin-left: 20%; margin-top: 10px;">
+			<!--<img src="kugelschreiber.PNG" alt="">-->
+
+			<img wicket:id="bleistiftImage" src="kugelschreiber.PNG" /> <img
+				wicket:id="RadiergummiImage" src="kugelschreiber.PNG" /> <img
+				wicket:id="kugelschreiberImage" src="kugelschreiber.PNG" />
+
+		</div>
+		<br>
+		<div
+			style="margin-left: 20%; margin-top: 10px; width: 30%; height: 300px; clear: left;">
+
+			<h2 wicket:id="preis"></h2>
+			<form wicket:id="form">
+
+
+				<input wicket:id="kaufButton" type="submit" value="KAUFEN"
+					style="float: left; height: 55px; width: 60%; background-color: #c00; color: #fff;" />
+				<br> <br>
+				<button wicket:id="einkaufButton" type="submit">
+					<img src="einkaufen.PNG" alt="">
+				</button>
+
+
+
+			</form>
+
+		</div>
+
+
+	</div>
+	<div id="footer"
+		style="background-color: #FFA500; clear: both; text-align: center;">
+		Copyright © Hammoud   </div>
+</div>
+</body>
+
+</html>

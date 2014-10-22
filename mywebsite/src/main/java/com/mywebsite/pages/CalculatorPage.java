@@ -1,4 +1,4 @@
-package com.mywebsite;
+package com.mywebsite.pages;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,23 +11,28 @@ import com.googlecode.wicket.kendo.ui.KendoIcon;
 import com.googlecode.wicket.kendo.ui.widget.menu.Menu;
 import com.googlecode.wicket.kendo.ui.widget.menu.item.IMenuItem;
 import com.googlecode.wicket.kendo.ui.widget.menu.item.MenuItem;
-import com.mywebsite.pages.CalculatorPage;
-import com.mywebsite.pages.FirstPage;
+import com.mywebsite.HomePage;
+import com.mywebsite.panels.PanelCalc;
 
-public class HomePage extends WebPage {
+public class CalculatorPage extends WebPage {
+
     /**
      * 
      */
-    private static final long serialVersionUID = 6087575290659178187L;
+    private static final long serialVersionUID = 1L;
 
-    public HomePage(final PageParameters parameters) {
+    public CalculatorPage(final PageParameters parameters) {
 	super(parameters);
-
+	this.setOutputMarkupId(true);
+	this.setOutputMarkupPlaceholderTag(true);
 	Menu menu = new Menu("menu", newMenuItemList());
 	add(menu);
-
+	
+	PanelCalc panel = new PanelCalc("panel");
+	add(panel);
     }
 
+    
     public List<IMenuItem> newMenuItemList() {
 	List<IMenuItem> list = new ArrayList<IMenuItem>();
 

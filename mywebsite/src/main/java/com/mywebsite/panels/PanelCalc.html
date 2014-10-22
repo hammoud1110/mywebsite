@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:wicket="http://wicket.apache.org" lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Calculator</title>
+<!-- <link rel="stylesheet" href="css/calcstyle.css"/> -->
+
+</head>
+<style>
+
+</style>
+<body>
+	<wicket:panel>
+		<form wicket:id="form">
+			<div class="box">
+				<div class="display">
+					<input wicket:id="tfAusgabe" type="text" readonly size="18" id="d">
+				</div>
+				<div class="keys">
+					<p>
+						<input type="button" class="button gray" value="mrc"><input wicket:id="delete" type="button" class="button black"
+							value="CE"><input
+							wicket:id="deleteAll" type="button" class="button black"
+							value="C"><input
+							type="button" wicket:id="divide" class="button pink" value="/">
+					</p>
+					<p>
+						<input wicket:id="seven" type="button" class="button black"
+							value="7"><input type="button" wicket:id="eight"
+							class="button black" value="8"><input wicket:id="nine"
+							type="button" class="button black" value="9"><input
+							wicket:id="multiply" type="button" class="button pink" value="X">
+					</p>
+					<p>
+						<input wicket:id="four" type="button" class="button black"
+							value="4"><input wicket:id="five" type="button"
+							class="button black" value="5"><input wicket:id="six"
+							type="button" class="button black" value="6"><input
+							wicket:id="minus" type="button" class="button pink" value="-">
+					</p>
+					<p>
+						<input wicket:id="one" type="button" class="button black"
+							value="1"><input wicket:id="two" type="button"
+							class="button black" value="2"><input wicket:id="three"
+							type="button" class="button black" value="3"><input
+							wicket:id="plus" type="button" class="button pink" value="+">
+					</p>
+					<p>
+						<input wicket:id="zero" type="button" class="button black"
+							value="0"><input wicket:id="comma" type="button"
+							class="button black" value="."><input
+							type="button" class="button gray" value="m+"><input wicket:id="equal" type="button"
+							class="button orange" value="=">
+					</p>
+
+					
+				</div>
+			</div>
+		</form>
+	</wicket:panel>
+
+</body>
+</html>
+

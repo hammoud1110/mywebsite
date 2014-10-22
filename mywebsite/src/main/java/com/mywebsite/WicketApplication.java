@@ -1,11 +1,16 @@
 package com.mywebsite;
 
 import org.apache.wicket.Session;
+import org.apache.wicket.core.request.mapper.CryptoMapper;
 import org.apache.wicket.protocol.http.WebApplication;
 import org.apache.wicket.protocol.https.HttpsConfig;
 import org.apache.wicket.protocol.https.HttpsMapper;
 import org.apache.wicket.request.Request;
 import org.apache.wicket.request.Response;
+
+import com.mywebsite.pages.CalculatorPage;
+import com.mywebsite.pages.FirstPage;
+import com.mywebsite.panels.ProductDetails;
 
 /**
  * Application object for your web application. If you want to run this
@@ -32,10 +37,16 @@ public class WicketApplication extends WebApplication{
     @Override
     public void init() {
 	super.init();
-	
 	setRootRequestMapper(new HttpsMapper(getRootRequestMapper(), new HttpsConfig(8080,8443)));
-//	setRootRequestMapper(new CryptoMapper(getRootRequestMapper(), this));
-//        mountPage("/Home", HomePage.class);
+	setRootRequestMapper(new CryptoMapper(getRootRequestMapper(), this));
+	
+        mountPage("/homepage/", HomePage.class);
+        String result = "";
+        
+	
+        mountPage("/eshop/products/", ProductDetails.class);
+        mountPage("/calculatorpage/", CalculatorPage.class);
+        mountPage("/eshop/", FirstPage.class);
 	mountPage(LOGIN_HANDLER_PATH, LoginHandlerPage.class);
     }
 
@@ -56,5 +67,8 @@ public class WicketApplication extends WebApplication{
     public Session newSession(Request request, Response response) {
 	return new WicketHttpsSession(request);
     }
+    
+    
+   
 
 }

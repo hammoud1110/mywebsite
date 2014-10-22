@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:wicket="http://wicket.apache.org" lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Calculator</title>
+<!-- <link rel="stylesheet" href="css/calcstyle.css"/> -->
+
+</head>
+<style>
+body {
+	background-color: tan;
+}
+.box {
+	background-color: #3d4543;
+	height: 300px;
+	width: 250px;
+	border-radius: 10px;
+	position: relative;
+	top: 80px;
+	left: 40%;
+}
+
+.display {
+	background-color: #222;
+	width: 220px;
+	position: relative;
+	left: 15px;
+	top: 20px;
+	height: 40px;
+}
+</style>
+<body>
+
+	<wicket:panel>
+		<div class="box">
+			<div class="display">
+				<h1>Product listing</h1>
+				<table border="3">
+					<tr wicket:id="eachProduct">
+						<td wicket:id="id"></td>
+
+						<!-- <span wicket:id="name">Pencil</span>  <td wicket:id="name"></td> -->
+
+
+						<td><a wicket:id="detailsLink"><span wicket:id="name"></span></a></td>
+
+						<td wicket:id="price"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</wicket:panel>
+
+</body>
+</html>

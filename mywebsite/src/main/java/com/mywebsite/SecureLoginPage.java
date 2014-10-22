@@ -16,9 +16,9 @@ public class SecureLoginPage extends WebPage {
     }
 
     protected void init() {
-	BookmarkablePageLink bookmarkablePageLink = new BookmarkablePageLink(WICKET_ID_HOMEPAGE_LINK, HomePage.class);
-	
-	add(bookmarkablePageLink);
+//	BookmarkablePageLink bookmarkablePageLink = new BookmarkablePageLink(WICKET_ID_HOMEPAGE_LINK, HomePage.class);
+//	
+//	add(bookmarkablePageLink);
 	add(new LoginForm(WICKET_ID_LOGINFORM));
     }
 

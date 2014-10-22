@@ -2,13 +2,12 @@ body {
 	min-width: 1800px;
 }
 
-
 .k-widget {
-	background-color: #FFFFFF;
+    background-color: #d2b48c;
 }
 
 .k-menu.k-header {
-	border-color: #FFFFFF;
+	border-color: #2E2E2E;
 }
 
 .k-menu .k-item {
@@ -21,3 +20,4 @@ body {
 	line-height: 3em;
 	padding: 0.5em 1.1em 0.4em;
 }
+
