@@ -23,6 +23,7 @@ import com.googlecode.wicket.kendo.ui.widget.menu.Menu;
 import com.googlecode.wicket.kendo.ui.widget.menu.item.IMenuItem;
 import com.googlecode.wicket.kendo.ui.widget.menu.item.MenuItem;
 import com.mywebsite.HomePage;
+import com.mywebsite.entity.MenuListFactory;
 import com.mywebsite.models.Product;
 import com.mywebsite.pages.CalculatorPage;
 import com.mywebsite.pages.FirstPage;
@@ -33,14 +34,14 @@ public class ProductDetails extends WebPage {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	ContextImage bleistiftImage;
-	ContextImage RadiergummiImage;
-	ContextImage kugelschreiberImage;
-	
+	private ContextImage bleistiftImage;
+	private ContextImage RadiergummiImage;
+	private ContextImage kugelschreiberImage;
+	private MenuListFactory listFactory = new MenuListFactory();
 	
 	public ProductDetails(Product p) {
 	    
-	    Menu menu = new Menu("menu", newMenuItemList());
+	    Menu menu = new Menu("menu", listFactory.newMenuItemList());
 		add(menu);
 		
 		
@@ -116,29 +117,9 @@ public class ProductDetails extends WebPage {
 		    }
 		});
 
-		list.add(new MenuItem("Tools", newSubMenuList()));
+		list.add(new MenuItem("Tools", listFactory.newSubMenuList()));
 
 		return list;
 	    }
 
-	    public List<IMenuItem> newSubMenuList() {
-		List<IMenuItem> list = new ArrayList<IMenuItem>();
-
-		list.add(new MenuItem("Calculator"){
-		    /**
-		     * 
-		     */
-		    private static final long serialVersionUID = 1L;
-
-		    @Override
-		    public void onClick(AjaxRequestTarget target) {
-		       
-		        setResponsePage(CalculatorPage.class);
-		    }
-		});
-		list.add(new MenuItem("..."));
-		list.add(new MenuItem("..."));
-
-		return list;
-	    }
 }
