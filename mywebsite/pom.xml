@@ -49,6 +49,11 @@
 			<version>${wicket.version}</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.wicketstuff</groupId>
+			<artifactId>wicketstuff-tinymce</artifactId>
+			<version>1.5.3</version>
+		</dependency>
 
 
 		<!-- OPTIONAL DEPENDENCY <dependency> <groupId>org.apache.wicket</groupId> 
@@ -115,7 +120,11 @@
 			<artifactId>wicket-kendo-ui-theme-default</artifactId>
 			<version>6.17.1-SNAPSHOT</version>
 		</dependency>
-		
+		<dependency>
+			<groupId>org.wicketstuff</groupId>
+			<artifactId>wicketstuff-tinymce</artifactId>
+			<version>6.17.0</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.xerial</groupId>
@@ -150,6 +159,9 @@
 			<artifactId>postgresql</artifactId>
 			<version>9.2-1003-jdbc4</version>
 		</dependency>
+
+
+
 
 	</dependencies>
 	<build>
@@ -251,5 +263,9 @@
 				<enabled>true</enabled>
 			</snapshots>
 		</repository>
+
+
+
+
 	</repositories>
 </project>
