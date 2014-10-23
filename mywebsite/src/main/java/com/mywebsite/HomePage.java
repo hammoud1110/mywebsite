@@ -38,6 +38,8 @@ public class HomePage extends WebPage {
 	form.add(feedback);
 	add(form);
 	
+	
+	
 	final List<ITab> tabs = new ArrayList<ITab>();
 	tabs.add(new AbstractTab(new Model<String>("first tab"))
         {
