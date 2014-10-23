@@ -212,6 +212,7 @@ public class PanelHomePage extends Panel implements Serializable {
 			 ReminderController.speichern(rBean);
 
 			form.info("Der Eintrag wurde gespeichert");
+			findParent(HomePage.class).getForm().info("Der Eintrag wurde gespeichert");
 			target.add(findParent(HomePage.class));
 		}
 	});

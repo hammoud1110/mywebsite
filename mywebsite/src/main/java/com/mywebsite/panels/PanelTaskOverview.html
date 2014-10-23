@@ -1,0 +1,46 @@
+<wicket:panel>
+	<form wicket:id="showForm">
+		<input wicket:id="showButton" type="submit" value="Show"
+			style="margin-left: auto; margin-right: auto; display: block; height: 35px; width: 30%" />
+
+	</form>
+	
+	<form wicket:id="hideForm">
+		<input wicket:id="hideButton" type="submit" value="Hide"
+			style="margin-left: auto; margin-right: auto; display: block; height: 35px; width: 30%" />
+
+	</form>
+	
+	<br>
+
+
+	<form wicket:id="tableForm">
+		<table border="1" style="margin-left: auto; margin-right: auto;">
+			<tr>
+				<th>ID</th>
+				<th>NAME</th>
+				<th>STADT</th>
+				<th>AGE</th>
+				<th>ADDRESS</th>
+				<th>FAX</th>
+				<th>HANDY</th>
+				<th>TELEFON</th>
+				<th>EMAIL</th>
+				<th>NOTIZ</th>
+			</tr>
+			<tr wicket:id="eachEntry">
+				<td wicket:id="id"></td>
+				<td wicket:id="name"></td>
+				<td wicket:id="stadt"></td>
+				<td wicket:id="age"></td>
+				<td wicket:id="adresse"></td>
+				<td wicket:id="fax"></td>
+				<td wicket:id="handy"></td>
+				<td wicket:id="telefon"></td>
+				<td wicket:id="email"></td>
+				<td wicket:id="notiz"></td>
+			</tr>
+		</table>
+	</form>
+
+</wicket:panel>

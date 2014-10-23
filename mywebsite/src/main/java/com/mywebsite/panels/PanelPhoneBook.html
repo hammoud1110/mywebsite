@@ -1,0 +1,50 @@
+<wicket:panel>
+
+
+	<style type="text/css">
+tr.odd {
+	background-color: RoyalBlue
+}
+
+tr.even {
+	background-color: GreenYellow
+}
+
+tr.header {
+	background-color: Pink
+}
+
+
+
+</style>
+
+	<form wicket:id="form">
+		<p>
+		<table style="margin-left: auto; margin-right: auto">
+			<tr class="header">
+				<th>Name</th>
+				<th>Stadt</th>
+				<th>Tel #</th>
+				<th>EMAIL</th>
+				<th> </th>
+			</tr>
+			<tr wicket:id="eachEntry" class="odd even">
+				<td wicket:id="name"></td>
+				<td wicket:id="stadt"></td>
+				<td wicket:id="telNo"></td>
+				<td wicket:id="email"></td>
+
+				<td>
+					<form wicket:id="deleteForm">
+						<input wicket:id="deleteLink" type="submit" value="Delete">
+					</form>
+				</td>
+			</tr>
+		</table>
+
+		
+		
+		<button wicket:id="refreshLink" type="submit"><img src="refresh.png" alt=""></button>
+		</p>
+	</form>
+</wicket:panel>

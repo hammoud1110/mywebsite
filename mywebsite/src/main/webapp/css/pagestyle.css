@@ -133,3 +133,12 @@ body {
 p {
 	line-height: 10px;
 }
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+	border: 1px solid #fbd850;
+	background: #000000;
+	font-weight: bold;
+	color: #eb8f00;
+}
