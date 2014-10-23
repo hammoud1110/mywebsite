@@ -90,7 +90,7 @@ public class PanelPhoneBook extends Panel {
 				ReminderBean rBean = (ReminderBean) item.getModelObject();
 				rBeanList.remove(rBean);
 				ReminderController.delete(rBean);
-				ReminderController.delete(rBean);
+				ReminderController.loeschen(rBean);
 				target.add(form);
 			}
 		});

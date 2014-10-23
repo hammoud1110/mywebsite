@@ -259,5 +259,13 @@ public class ReminderController {
 
 	return rBeanList;
     }
+    
+    public static void loeschen(ReminderBean rBean) {
+		Session session = HibernateUtil.getSessionFactory().openSession();
+		session.beginTransaction();
+		session.delete(rBean);
+		session.getTransaction().commit();
+		session.close();
+	}
 
 }
