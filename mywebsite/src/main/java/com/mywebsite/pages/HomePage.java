@@ -41,7 +41,7 @@ public class HomePage extends WebPage {
 	
 	
 	final List<ITab> tabs = new ArrayList<ITab>();
-	tabs.add(new AbstractTab(new Model<String>("first tab"))
+	tabs.add(new AbstractTab(new Model<String>("Persönliche Daten"))
         {
             private static final long serialVersionUID = 1L;
 
@@ -53,7 +53,7 @@ public class HomePage extends WebPage {
 
         });
 	
-	tabs.add(new AbstractTab(new Model<String>("2nd tab"))
+	tabs.add(new AbstractTab(new Model<String>("Task Overview"))
         {
             private static final long serialVersionUID = 1L;
 
@@ -65,7 +65,7 @@ public class HomePage extends WebPage {
 
         });
 	
-	tabs.add(new AbstractTab(new Model<String>("3rd tab"))
+	tabs.add(new AbstractTab(new Model<String>("Phone Book"))
         {
             private static final long serialVersionUID = 1L;
 

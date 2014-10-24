@@ -28,6 +28,8 @@ import com.googlecode.wicket.kendo.ui.KendoIcon;
 import com.googlecode.wicket.kendo.ui.widget.menu.Menu;
 import com.googlecode.wicket.kendo.ui.widget.menu.item.IMenuItem;
 import com.googlecode.wicket.kendo.ui.widget.menu.item.MenuItem;
+import com.googlecode.wicket.kendo.ui.widget.splitter.BorderLayout;
+import com.googlecode.wicket.kendo.ui.widget.splitter.SplitterBehavior;
 import com.mywebsite.entity.MenuListFactory;
 import com.mywebsite.models.Product;
 
@@ -53,9 +55,8 @@ public class ProductDetailsPage extends WebPage {
 	
 	
 	
-	add(creatTextarea());
-	// add(new RichTextEditor("textArea")); TinyMceBehavior()
-
+//	add(creatTextarea());
+	
 	add(bleistiftImage = new ContextImage("bleistiftImage", "bleistift.PNG"));
 	add(RadiergummiImage = new ContextImage("RadiergummiImage",
 		"radiergummi.PNG"));
