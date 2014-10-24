@@ -10,7 +10,8 @@ import org.apache.wicket.request.Response;
 
 import com.mywebsite.pages.CalculatorPage;
 import com.mywebsite.pages.FirstPage;
-import com.mywebsite.panels.ProductDetails;
+import com.mywebsite.pages.HomePage;
+import com.mywebsite.pages.ProductDetailsPage;
 
 /**
  * Application object for your web application. If you want to run this
@@ -44,7 +45,7 @@ public class WicketApplication extends WebApplication{
         String result = "";
         
 	
-        mountPage("/eshop/products/", ProductDetails.class);
+        mountPage("/eshop/products/", ProductDetailsPage.class);
         mountPage("/calculatorpage/", CalculatorPage.class);
         mountPage("/eshop/", FirstPage.class);
 	mountPage(LOGIN_HANDLER_PATH, LoginHandlerPage.class);

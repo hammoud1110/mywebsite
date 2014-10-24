@@ -5,6 +5,8 @@ import org.apache.wicket.markup.html.link.Link;
 import org.apache.wicket.model.IModel;
 import org.apache.wicket.model.ResourceModel;
 
+import com.mywebsite.pages.HomePage;
+
 /**
  * @author Petri Kainulainen
  */

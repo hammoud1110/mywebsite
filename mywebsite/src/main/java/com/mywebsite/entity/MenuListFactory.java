@@ -9,9 +9,9 @@ import org.apache.wicket.markup.html.WebPage;
 import com.googlecode.wicket.kendo.ui.KendoIcon;
 import com.googlecode.wicket.kendo.ui.widget.menu.item.IMenuItem;
 import com.googlecode.wicket.kendo.ui.widget.menu.item.MenuItem;
-import com.mywebsite.HomePage;
 import com.mywebsite.pages.CalculatorPage;
 import com.mywebsite.pages.FirstPage;
+import com.mywebsite.pages.HomePage;
 
 public class MenuListFactory extends WebPage {
 

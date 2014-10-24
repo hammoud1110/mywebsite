@@ -14,7 +14,6 @@ import com.googlecode.wicket.kendo.ui.KendoIcon;
 import com.googlecode.wicket.kendo.ui.widget.menu.Menu;
 import com.googlecode.wicket.kendo.ui.widget.menu.item.IMenuItem;
 import com.googlecode.wicket.kendo.ui.widget.menu.item.MenuItem;
-import com.mywebsite.HomePage;
 import com.mywebsite.entity.MenuListFactory;
 import com.mywebsite.panels.PanelRest;
 

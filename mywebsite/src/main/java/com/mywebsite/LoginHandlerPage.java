@@ -4,6 +4,8 @@ import org.apache.wicket.PageParameters;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.protocol.https.RequireHttps;
 
+import com.mywebsite.pages.HomePage;
+
 /*
  * Copyright 2011 Petri Kainulainen
  *

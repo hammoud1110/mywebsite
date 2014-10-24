@@ -1,4 +1,4 @@
-package com.mywebsite;
+package com.mywebsite.pages;
 
 import java.util.ArrayList;
 import java.util.List;

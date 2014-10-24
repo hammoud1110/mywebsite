@@ -26,10 +26,11 @@ import org.apache.wicket.model.PropertyModel;
 
 
 
-import com.mywebsite.HomePage;
+
 import com.mywebsite.entity.ReminderController;
 import com.mywebsite.entity.Stadt;
 import com.mywebsite.models.ReminderBean;
+import com.mywebsite.pages.HomePage;
 
 public class PanelHomePage extends Panel implements Serializable {
 

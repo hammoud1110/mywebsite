@@ -10,6 +10,8 @@ import org.apache.wicket.markup.html.panel.FeedbackPanel;
 import org.apache.wicket.model.CompoundPropertyModel;
 import org.apache.wicket.model.IModel;
 
+import com.mywebsite.pages.HomePage;
+
 public class LoginForm extends StatelessForm<LoginDTO> {
 
     private static final String MESSAGE_KEY_LOGIN_FAILED = "error.login.failed";

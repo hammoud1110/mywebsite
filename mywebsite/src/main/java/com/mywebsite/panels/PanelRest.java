@@ -21,6 +21,7 @@ import org.apache.wicket.util.string.StringValue;
 
 import com.mywebsite.models.Product;
 import com.mywebsite.pages.FirstPage;
+import com.mywebsite.pages.ProductDetailsPage;
 
 public class PanelRest extends Panel implements Serializable {
 
@@ -76,7 +77,7 @@ public class PanelRest extends Panel implements Serializable {
 		    private static final long serialVersionUID = 1L;
 
 		    public void onClick() {
-			ProductDetails details = new ProductDetails(p);
+			ProductDetailsPage details = new ProductDetailsPage(p);
 			// setResponsePage(details);
 			findParent(FirstPage.class).setResponsePage(details);
 			

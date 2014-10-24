@@ -3,7 +3,7 @@
  * @author Hammoud
  * @version 1.0
  */
-package com.mywebsite.panels;
+package com.mywebsite.pages;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,12 +28,10 @@ import com.googlecode.wicket.kendo.ui.KendoIcon;
 import com.googlecode.wicket.kendo.ui.widget.menu.Menu;
 import com.googlecode.wicket.kendo.ui.widget.menu.item.IMenuItem;
 import com.googlecode.wicket.kendo.ui.widget.menu.item.MenuItem;
-import com.mywebsite.HomePage;
 import com.mywebsite.entity.MenuListFactory;
 import com.mywebsite.models.Product;
-import com.mywebsite.pages.FirstPage;
 
-public class ProductDetails extends WebPage {
+public class ProductDetailsPage extends WebPage {
     /**
 	 * 
 	 */
@@ -44,7 +42,7 @@ public class ProductDetails extends WebPage {
     private ContextImage kugelschreiberImage;
     private MenuListFactory listFactory = new MenuListFactory();
 
-    public ProductDetails(Product p) {
+    public ProductDetailsPage(Product p) {
 
 	Menu menu = new Menu("menu", listFactory.newMenuItemList());
 	add(menu);

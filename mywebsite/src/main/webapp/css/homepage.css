@@ -5,7 +5,11 @@ body {
 
 
 .k-widget {
-    background-color: #d2b48c;
+    background-color: #252525;
+}
+
+.k-header,.k-treemap-title {
+    color: #0494c6;
 }
 
 .k-menu.k-header {

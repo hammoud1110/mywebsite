@@ -4,7 +4,10 @@ body {
 }
 
 .k-widget {
-    background-color: #d2b48c;
+    background-color: #252525;
+}
+.k-header,.k-treemap-title {
+    color: #0494c6;
 }
 
 .k-menu.k-header {
@@ -20,7 +23,9 @@ body {
 	display: block;
 	line-height: 3em;
 	padding: 0.5em 1.1em 0.4em;
+	
 }
+
 
 .box {
 	background-color: #3d4543;
@@ -131,14 +136,30 @@ body {
 }
 
 p {
-	line-height: 10px;
+	line-height: 10px; 
+}
+
+
+.ui-state-active .ui-icon {
+    background-image: url("images/ui-icons_ef8c08_256x240.png");
+    background-image: #0494c6;
+}
+
+.ui-state-default .ui-icon {
+    background-image: url("images/ui-icons_ef8c08_256x240.png");
+}
+.ui-icon-triangle-1-e {
+    background-position: 0px 0px;
 }
 
 .ui-state-active,
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
 	border: 1px solid #fbd850;
-	background: #000000;
+	background: #252525;;
 	font-weight: bold;
-	color: #eb8f00;
+	color: #0494c6;
+	
 }
+
+
