@@ -12,6 +12,7 @@ import com.mywebsite.pages.CalculatorPage;
 import com.mywebsite.pages.FirstPage;
 import com.mywebsite.pages.HomePage;
 import com.mywebsite.pages.ProductDetailsPage;
+import com.mywebsite.pages.TestPage;
 
 /**
  * Application object for your web application. If you want to run this
@@ -44,9 +45,9 @@ public class WicketApplication extends WebApplication{
         mountPage("/homepage/", HomePage.class);
         String result = "";
         
-	
+        mountPage("/tools/testpage/", TestPage.class);
         mountPage("/eshop/products/", ProductDetailsPage.class);
-        mountPage("/calculatorpage/", CalculatorPage.class);
+        mountPage("/tools/calculator/", CalculatorPage.class);
         mountPage("/eshop/", FirstPage.class);
 	mountPage(LOGIN_HANDLER_PATH, LoginHandlerPage.class);
     }

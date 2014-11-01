@@ -12,6 +12,7 @@ import com.googlecode.wicket.kendo.ui.widget.menu.item.MenuItem;
 import com.mywebsite.pages.CalculatorPage;
 import com.mywebsite.pages.FirstPage;
 import com.mywebsite.pages.HomePage;
+import com.mywebsite.pages.TestPage;
 
 public class MenuListFactory extends WebPage {
 
@@ -65,10 +66,10 @@ public class MenuListFactory extends WebPage {
 	        setResponsePage(CalculatorPage.class);
 	    }
 	});
-	list.add(new MenuItem("..."){
+	list.add(new MenuItem("TestPage"){
 	    @Override
 	    public void onClick(AjaxRequestTarget target) {
-	      
+		 setResponsePage(TestPage.class);
 	    }
 	});
 	list.add(new MenuItem("..."));
